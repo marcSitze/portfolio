@@ -1,0 +1,40 @@
+<% if (locals.errors != null ) { %> 
+    <% errors.forEach(error => { %>
+        <li class="alert alert-danger"><%= error.msg %></li>
+   <% }) %> 
+<% } %> 
+
+<form id="form">
+  <div class="input-group my-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="input-text"><i class="fas fa-user"></i></span>
+    </div>
+    <input type="email" name="email" class="form-control form-control-lg" placeholder="Enter your email here">
+  </div>
+  <div class="input-group my-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="input-phone"><i class="fas fa-phone"></i></span>
+    </div>
+    <input type="number" name="phone" class="form-control form-control-lg text-capitalize" placeholder="Enter your phone number here">
+  </div>
+
+
+
+  <div class="input-group my-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="input-email"><i class="fas fa-envelope"></i></span>
+    </div>
+    <input type="text" name="name" class="form-control form-control-lg text-capitalize" placeholder="Enter your name here">
+  </div>
+
+  <div class="input-group my-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="input-username"><i class="fas fa-users"></i></span>
+    </div>
+    <!-- <input type="text" class="form-control form-control-lg text-capitalize" placeholder="Enter your username here"> -->
+    <textarea name="message" id="" cols="30" rows="10"></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-block btn-lg text-uppercase contact-btn"><i class="far fa-hand-point-right mr-2"></i>submit here</button>
+</form>
+<script src="/js/submit.js"></script>
