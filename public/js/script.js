@@ -47,3 +47,11 @@ $(document).ready(function() {
     });
   });
   
+  // responsive tabs that is changes depending on the page and position
+$(function(){
+  $(window).scroll(function(){
+    // console.log($(this).scrollTop());
+    const sections = $('section').attr('id');
+    console.log($(this));
+  });
+});

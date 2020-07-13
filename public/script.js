@@ -44,3 +44,11 @@ $(document).ready(function() {
     });
   });
 });
+
+// responsive tabs that is changes depending on the page and position
+function responsiveTabs(){
+  window.addEventListener('scroll', e => {
+    console.log(e);
+  });
+}
+responsiveTabs();
