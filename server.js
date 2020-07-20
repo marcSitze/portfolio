@@ -11,6 +11,7 @@ const expressValidator = require('express-validator');
 const PORT = process.env.PORT || 8000;
 const indexRoute = require('./routes/index');
 const contactsRoute = require('./routes/contacts');
+const youtubeRoute = require('./routes/youtube');
 
 
 // Set view engine
@@ -19,7 +20,7 @@ app.set('views', __dirname + '/views');
 const database_url = 'mongodb+srv://marc:marc1234@localdb-2oyid.mongodb.net/test?retryWrites=true&w=majority';
 // process.env.DATABASE_URL
 // Connect to the db
-mongoose.connect(database_url, {
+mongoose.connect(process.env.DATABASE_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
@@ -40,5 +41,6 @@ app.use(bodyParser.urlencoded({ limit: '10mb', extended: false }));
 // set routes 
 app.use('/', indexRoute );
 app.use('/contacts', contactsRoute );
+app.use('/youtube', youtubeRoute );
 
 app.listen(PORT, () => console.log('Server running at ' + PORT));

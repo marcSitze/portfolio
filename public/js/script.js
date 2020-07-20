@@ -52,6 +52,6 @@ $(function(){
   $(window).scroll(function(){
     // console.log($(this).scrollTop());
     const sections = $('section').attr('id');
-    console.log($(this));
+    // console.log($(this));
   });
 });
