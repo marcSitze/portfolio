@@ -179,13 +179,14 @@ body {
   .title-underline {
     height: 5px;
     width: 250px;
-    background: rgb(0, 144, 255);
+    background: rgb(255, 255, 255);
     margin: -28px auto 0 auto;
   }
   
   .title a {
-    color: rgb(0, 144, 255);
+    color: rgb(255, 255, 255);
     font-size: 30px;
+    padding-top: 10px;
     padding: 0px 10px;
     display: inline-block;
     background: #f1fffa;
@@ -219,8 +220,8 @@ body {
   /*###########about############*/
   
   #about .title a {
-    background: #909090;
-    /* background: #0082E6; */
+    /* background: #909090; */
+    background: #0082E6;
   }
   
   
