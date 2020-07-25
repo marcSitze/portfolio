@@ -20,7 +20,7 @@ app.set('views', __dirname + '/views');
 const database_url = 'mongodb+srv://marc:marc1234@localdb-2oyid.mongodb.net/test?retryWrites=true&w=majority';
 // process.env.DATABASE_URL
 // Connect to the db
-mongoose.connect(process.env.DATABASE_URL, {
+mongoose.connect(database_url, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
